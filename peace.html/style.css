@@ -1,0 +1,15 @@
+.container {
+    display: flex; /* Puts sidebar and main content side-by-side */
+    height: 100vh; /* Makes the dashboard fill the whole screen */
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #333; /* Dark professional look */
+    color: white;
+}
+
+.main-content {
+    flex-grow: 1; /* Tells the main area to take up the remaining space */
+    padding: 20px;
+}
