@@ -1,0 +1,14 @@
+body{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.love{
+    color: red;
+    font-size: 80px;
+    font-family: Arial;
+    text-shadow: 0 0 20px pink;
+}
