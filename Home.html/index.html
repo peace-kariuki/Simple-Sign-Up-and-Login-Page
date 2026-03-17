@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Human Body and Heart Diagram</title>
+
+<style>
+
+body{
+    font-family: Arial, sans-serif;
+    background:#eef2f3;
+    text-align:center;
+}
+
+/* BODY */
+.body{
+    position:relative;
+    width:220px;
+    margin:40px auto;
+}
+
+/* Head */
+.head{
+    width:90px;
+    height:90px;
+    background:#f5c6a5;
+    border-radius:50%;
+    margin:auto;
+}
+
+/* Torso */
+.torso{
+    width:140px;
+    height:220px;
+    background:#d9d9d9;
+    margin:auto;
+    border-radius:25px;
+    position:relative;
+}
+
+/* Arms */
+.arm{
+    width:30px;
+    height:150px;
+    background:#d9d9d9;
+    position:absolute;
+    top:20px;
+    border-radius:20px;
+}
+
+.left-arm{ left:-35px; }
+.right-arm{ right:-35px; }
+
+/* Legs */
+.legs{
+    display:flex;
+    justify-content:space-between;
+    width:140px;
+    margin:auto;
+}
+
+.leg{
+    width:45px;
+    height:160px;
+    background:#d9d9d9;
+    border-radius:20px;
+}
+
+/* HEART */
+.heart{
+    position:absolute;
+    top:70px;
+    left:50px;
+    width:40px;
+    height:40px;
+    background:red;
+    transform:rotate(-45deg);
+}
+
+/* Heart shape */
+.heart:before,
+.heart:after{
+    content:"";
+    width:40px;
+    height:40px;
+    background:red;
+    border-radius:50%;
+    position:absolute;
+}
+
+.heart:before{
+    top:-20px;
+    left:0;
+}
+
+.heart:after{
+    left:20px;
+    top:0;
+}
+
+/* LABELS */
+.label{
+    position:absolute;
+    font-size:12px;
+    background:white;
+    padding:4px 6px;
+    border-radius:6px;
+    border:1px solid #888;
+}
+
+/* Label Positions */
+.ra{top:60px; left:-110px;}
+.rv{top:95px; left:-110px;}
+.la{top:60px; right:-110px;}
+.lv{top:95px; right:-110px;}
+.aorta{top:20px; left:40px;}
+.pulmonary{top:40px; right:-110px;}
+.septum{top:120px; left:-110px;}
+.mitral{top:120px; right:-110px;}
+.tricuspid{top:150px; left:-110px;}
+.vena{top:20px; left:-110px;}
+
+</style>
+</head>
+
+<body>
+
+<h2>Human Body with Heart and Labeled Parts</h2>
+
+<div class="body">
+
+<div class="head"></div>
+
+<div class="torso">
+
+<div class="arm left-arm"></div>
+<div class="arm right-arm"></div>
+
+<!-- HEART -->
+<div class="heart"></div>
+
+<!-- HEART LABELS -->
+<div class="label ra">Right Atrium</div>
+<div class="label rv">Right Ventricle</div>
+<div class="label la">Left Atrium</div>
+<div class="label lv">Left Ventricle</div>
+<div class="label aorta">Aorta</div>
+<div class="label pulmonary">Pulmonary Artery</div>
+<div class="label septum">Septum</div>
+<div class="label mitral">Mitral Valve</div>
+<div class="label tricuspid">Tricuspid Valve</div>
+<div class="label vena">Vena Cava</div>
+
+</div>
+
+<div class="legs">
+<div class="leg"></div>
+<div class="leg"></div>
+</div>
+
+</div>
+
+</body>
+</html>
